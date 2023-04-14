@@ -15,7 +15,7 @@ if (is_method_post()) {
 	$params = [$name_product, $type_product, $price_product, $img];
 	db_execute($sql, $params);
 
-	js_redirect_to("/"); // "/" => lấy file index.php
+	js_redirect_to("admin.php"); // "/" => lấy file index.php
 }
 
 $_title = "Create a new product";
@@ -172,6 +172,12 @@ $_title = "Create a new product";
 		a{
 			text-decoration: none;
 		}
+		.navbar{
+			display: flex;
+		}
+		.navbar li{
+			margin-right: 10px;
+		}
 	</style>
 
 </head>
@@ -183,7 +189,10 @@ $_title = "Create a new product";
 			<li class="form-input-wide">
 				<div class="form-header-group">
 					<div class="header-text">
-						<p><a href="../index.php">home</a></p>
+						<ul class="navbar">
+							<li><a href="../index.php">Home</a></li>
+							<li><a href="../admin.php">Admin</a></li>
+						</ul>
 						<h1 id="header_1" class="form-header">Submit a Product</h1>
 					</div>
 				</div>

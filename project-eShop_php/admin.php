@@ -57,59 +57,6 @@ check_login();
 					</div>
 				ELO;
 					} ?>
-					
-					<!-- PRODUCT ITEM START -->
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="product-item">
-							<div class="pi-img-wrapper">
-								<img src="assets/pages/img/product/electronic/arduino1.jpg" class="img-responsive" alt="Berry Lace Dress">
-								<div>
-									<a href="assets/pages/img/product/electronic/arduino1.jpg" class="btn btn-default fancybox-button">Zoom</a>
-									<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-								</div>
-							</div>
-							<h3><a href="shop-item.html">Berry Lace Dress Berry Lace Dress</a></h3>
-							<div class="pi-price">$29.00</div>
-							<a href="admin/delete.php" class="btn btn-default delete2">delete</a>
-							<a href="admin/edit.php" class="btn btn-default edit2">edit</a>
-						</div>
-					</div>
-					<!-- PRODUCT ITEM END -->
-
-					<!-- PRODUCT ITEM START -->
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="product-item">
-							<div class="pi-img-wrapper">
-								<img src="assets/pages/img/product/electronic/arduino2.jpg" class="img-responsive" alt="Berry Lace Dress">
-								<div>
-									<a href="assets/pages/img/product/electronic/arduino2.jpg" class="btn btn-default fancybox-button">Zoom</a>
-									<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-								</div>
-							</div>
-							<h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-							<div class="pi-price">$29.00</div>
-							<a type="submit" href="admin/delete.php" class="btn btn-default delete2">delete</a>
-							<a href="admin/edit.php" class="btn btn-default edit2">edit</a>
-						</div>
-					</div>
-					<!-- PRODUCT ITEM END -->
-					<!-- PRODUCT ITEM START -->
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="product-item">
-							<div class="pi-img-wrapper">
-								<img src="assets/pages/img/product/electronic/arduino3.jpg" class="img-responsive" alt="Berry Lace Dress">
-								<div>
-									<a href="assets/pages/img/product/electronic/arduino3.jpg" class="btn btn-default fancybox-button">Zoom</a>
-									<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-								</div>
-							</div>
-							<h3><a href="shop-item.html">Berry Lace Dress 2</a></h3>
-							<div class="pi-price">$29.00</div>
-							<a href="admin/delete.php" class="btn btn-default delete2">delete</a>
-							<a href="admin/edit.php" class="btn btn-default edit2">edit</a>
-						</div>
-					</div>
-					<!-- PRODUCT ITEM END -->
 				</div>
 			</div>
 			<!-- END PRODUCT ELECTRONIC -->

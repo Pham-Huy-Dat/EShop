@@ -9,7 +9,7 @@ if (is_method_get()) {
 
 	if (empty($data)) {
 		//quay về trang chủ nếu không có dữ liệu
-		redirect_to("/");
+		redirect_to("admin.php");
 	}
 	$data = $data[0];
 } else if (is_method_post()) {
@@ -18,25 +18,23 @@ if (is_method_get()) {
 	$name_product = $_POST["name_product"] ?? "";
 	$type_product = $_POST["TypeProduct"] ?? "";
 	$price_product = $_POST["price"] ?? "";
-
-	$img = upload_and_return_filename("img", "products/img"); 
+	
+	$img = upload_and_return_filename("img", "products/img");
 
 	if (!empty($img)) {
 		$sql = "update product set name=?, type_product=?, price=?, image=? where id=?";
-
 		$params = [$name_product, $type_product, $price_product, $img, $id];
 		db_execute($sql, $params);
-		js_redirect_to("/"); //Chuyển hướng về trang chủ
+		js_redirect_to("admin.php");
 		die;
 	}
+	else{
+		$sql1 =  "update product set name=?, type_product=?, price=? where id=?";
+		$params1 = [$name_product, $type_product, $price_product, $id];
+		db_execute($sql1, $params1);
+		js_redirect_to("admin.php"); 
+	}
 
-	$sql1 = "update product set name=?, type_product=?, price=?, where id=?";
-
-	$params = [$name_product, $type_product, $price_product, $id];
-	db_execute($sql1, $params1);
-
-	// js_alert("Cập nhật thành công");
-	js_redirect_to("/"); //Chuyển hướng về trang chủ
 }
 
 $_title = "Edit product information";
@@ -194,6 +192,12 @@ $_title = "Edit product information";
 		a{
 			text-decoration: none;
 		}
+		.navbar{
+			display: flex;
+		}
+		.navbar li{
+			margin-right: 10px;
+		}
 	</style>
 
 </head>
@@ -205,7 +209,10 @@ $_title = "Edit product information";
 			<li class="form-input-wide">
 				<div class="form-header-group">
 					<div class="header-text">
-						<p><a href="../index.php">home</a></p>
+					<ul class="navbar">
+							<li><a href="../index.php">Home</a></li>
+							<li><a href="../admin.php">Admin</a></li>
+						</ul>
 						<h1 id="header_1" class="form-header">Submit a Product</h1>
 					</div>
 				</div>
