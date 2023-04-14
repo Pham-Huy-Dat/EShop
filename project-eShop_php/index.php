@@ -371,9 +371,9 @@
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="product-item">
 									<div class="pi-img-wrapper">
-										<img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress">
+										<img src="assets/pages/img/products/lego1.jpg" class="img-responsive" alt="Berry Lace Dress">
 										<div>
-											<a href="assets/pages/img/products/model4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+											<a href="assets/pages/img/products/lego1.jpg" class="btn btn-default fancybox-button">Zoom</a>
 											<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
 										</div>
 									</div>
@@ -387,9 +387,9 @@
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="product-item">
 									<div class="pi-img-wrapper">
-										<img src="assets/pages/img/products/model5.jpg" class="img-responsive" alt="Berry Lace Dress">
+										<img src="assets/pages/img/products/lego2.jpg" class="img-responsive" alt="Berry Lace Dress">
 										<div>
-											<a href="assets/pages/img/products/model5.jpg" class="btn btn-default fancybox-button">Zoom</a>
+											<a href="assets/pages/img/products/lego2.jpg" class="btn btn-default fancybox-button">Zoom</a>
 											<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
 										</div>
 									</div>
@@ -403,9 +403,9 @@
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="product-item">
 									<div class="pi-img-wrapper">
-										<img src="assets/pages/img/products/model3.jpg" class="img-responsive" alt="Berry Lace Dress">
+										<img src="assets/pages/img/products/lego3.jpg" class="img-responsive" alt="Berry Lace Dress">
 										<div>
-											<a href="assets/pages/img/products/model3.jpg" class="btn btn-default fancybox-button">Zoom</a>
+											<a href="assets/pages/img/products/lego3.jpg" class="btn btn-default fancybox-button">Zoom</a>
 											<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
 										</div>
 									</div>
@@ -424,9 +424,9 @@
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="product-item">
 									<div class="pi-img-wrapper">
-										<img src="assets/pages/img/products/model7.jpg" class="img-responsive" alt="Berry Lace Dress">
+										<img src="assets/pages/img/products/cf1.jpg" class="img-responsive" alt="Berry Lace Dress">
 										<div>
-											<a href="assets/pages/img/products/model7.jpg" class="btn btn-default fancybox-button">Zoom</a>
+											<a href="assets/pages/img/products/cf1.jpg" class="btn btn-default fancybox-button">Zoom</a>
 											<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
 										</div>
 									</div>
@@ -440,9 +440,9 @@
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="product-item">
 									<div class="pi-img-wrapper">
-										<img src="assets/pages/img/products/model1.jpg" class="img-responsive" alt="Berry Lace Dress">
+										<img src="assets/pages/img/products/cf2.jpg" class="img-responsive" alt="Berry Lace Dress">
 										<div>
-											<a href="assets/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+											<a href="assets/pages/img/products/cf2.jpg" class="btn btn-default fancybox-button">Zoom</a>
 											<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
 										</div>
 									</div>
@@ -456,9 +456,9 @@
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="product-item">
 									<div class="pi-img-wrapper">
-										<img src="assets/pages/img/products/model2.jpg" class="img-responsive" alt="Berry Lace Dress">
+										<img src="assets/pages/img/products/cf3.jpg" class="img-responsive" alt="Berry Lace Dress">
 										<div>
-											<a href="assets/pages/img/products/model2.jpg" class="btn btn-default fancybox-button">Zoom</a>
+											<a href="assets/pages/img/products/cf3.jpg" class="btn btn-default fancybox-button">Zoom</a>
 											<a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
 										</div>
 									</div>
