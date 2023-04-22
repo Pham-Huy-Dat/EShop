@@ -6,45 +6,31 @@ if (is_logged()) {
 }
 
 if (is_method_post()) {
-	// 1.Nhận thông tin
 	$username = $_POST["username"] ?? "";
 	$password = $_POST["password"] ?? "";
 
-	//2.select từ db dựa vào username
-	$sql = "SELECT * FROM `member` WHERE `username` = ?";
+	//2. select data
+	$sql = "SELECT * FROM  `member` WHERE `username` = ?";
 	$user = db_select($sql, [$username]);
 
 	//3.Nếu kết quá select là rỗng ==> Nhập sai username
 	if (empty($user)) {
-		js_alert("tài khoản không tồn tại");
-		js_redirect_to("index.php");
+		js_alert("Tài khoản không tồn tại");
+		js_redirect_to("login.php");
 		die;
 	}
 
 	$user = $user[0];
-
-	//4.Nếu kết quả select khác rỗng thì so sánh password trong db vs password ở bước 1
-	// --> sử dụng password_verify()
-	// if (password_verify($password, $user["password"]) == true) {
-	// 	//xác thực thông tin đăng nhập thành công
-	// 	js_alert("Đăng nhập thành công!!!");
-	// 	$_SESSION["username"] = $username;
-	// 	$_SESSION["user_id"] = $user["id"];
-	// 	js_redirect_to("/");
-	// } else {
-	// 	js_alert("Mật khẩu sai");
-	// 	js_redirect_to("index.php");
-	// }
-
-	if ($password == $user["password"]) {
+	$chek =  $user["password"];
+	if (password_verify($password, $user["password"]) == true) {
 		//xác thực thông tin đăng nhập thành công
-		js_alert("Đăng nhập thành công!!!");
+		js_alert("Đăng nhập thành công!!! ");
 		$_SESSION["username"] = $username;
-		$_SESSION["user_id"] = $user["id"];
+		$_SESSION["id"] = $user["id"];
 		js_redirect_to("/");
 	} else {
-		js_alert("Mật khẩu sai");
-		js_redirect_to("index.php");
+		js_alert("Sai mật khẩu ");
+		js_redirect_to("login.php");
 	}
 }
 

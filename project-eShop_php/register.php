@@ -10,21 +10,18 @@ if (is_method_post()) {
 		die;
 	}
 
-	// $sql_int = "INSERT INTO member (username, password) VALUE ('$username', '$password')";
-	$sql_int = "INSERT INTO member VALUE (default, ?, ?)";
-	/* Cách kiểm tra 2 */
+	$sql_int = "INSERT INTO member VALUE(default, ?, ?)";
+
 	if (isUsernameExists($username)) {
 		js_alert("Tài khoản đã tồn tại!!!");
 		js_redirect_to("/");
 		die;
 	}
+	$options = [
+		"cost" => 10
+	];
 
-	// Độ dài của hash (Độ phức tạp tg của thuật toán)
-	// $options = [
-	// 	"cost" => 5
-	// ];
-
-	// $password_hash = password_hash($password, PASSWORD_DEFAULT, $options);
+	$password_hash = password_hash($password, PASSWORD_DEFAULT, $options);
 	$params = [$username, $password];
 
 	db_execute($sql_int, $params);
