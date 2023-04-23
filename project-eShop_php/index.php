@@ -1,7 +1,6 @@
 <?php
 	include("include/common.php");
-	$data = db_select("SELECT * FROM product");
-	
+	$data = db_select("SELECT * FROM product ORDER BY ID DESC WHERE type_product = Electronic");	
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -3,7 +3,7 @@ include("include/common.php");
 include "./include/header.php";
 
 // select all product
-$data = db_select("SELECT * FROM product");
+$data = db_select("SELECT * FROM product ORDER BY ID DESC WHERE type_product = Electronic");
 
 check_login();
 ?>
